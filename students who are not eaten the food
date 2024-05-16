@@ -1,0 +1,64 @@
+l=[
+  '1.usman','2.umar','3.gajini','4.masheera','5.moufick'
+  ]
+print(l)
+print()
+q=[]
+
+while True:
+  
+  
+  print('1.going to eat the food',
+     '2.already eaten the food',
+      '3.exit')
+  print()
+  z=input("Enter the option:")
+  print()
+  n=input("enter your name:")
+  print()
+  if n=='1.usman':
+   if z=='2':
+        del l[0]
+        q.append(n)
+        print("students who are eaten the food",q)
+        print("students who are not eaten the food",l)
+
+  elif n=='2.umar':
+       if z=='2':
+            l.remove(n)
+            q.append(n)
+            print("students who are eaten the food",q)
+            print("students who are not eaten the food",l)
+
+  elif n=='3.gajini':
+     if z=='2':
+          l.remove(n)
+          q.append(n)
+          print("students who are eaten the food",q)
+          print("students who are not eaten the food",l)
+     else:
+         print("invalid opr....")
+  elif n=='4.masheera':
+        if z=='2':
+             l.remove(n)
+             q.append(n)
+             print("students who are eaten the food",q)
+             print("students who are not eaten the food",l)
+        else:
+          print("invalid opr...")
+
+  elif n=='5.moufick':
+     if z=='2':
+          l.remove(n)
+          q.append(n)
+          print("students who are eaten the food",q)
+          print("students who are not eaten the food",l)
+     else:
+        print("invalid opr...")
+  elif len(l)==0:
+    print("all students are eaten the food")
+  elif z=='3':
+     break;
+  else:
+    print("invalid opr..")
+
